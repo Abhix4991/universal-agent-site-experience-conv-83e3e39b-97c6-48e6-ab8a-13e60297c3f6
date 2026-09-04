@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCH-804: Comparative Typographic Systems | Deep-Dive Course</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+
+  <header class="site-header">
+    <div class="nav-brand">
+      <span class="mono-tag">ARCHIVAL MONOGRAPH / 804</span>
+      <span class="brand-title">Institute of Classical Syntax</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#syllabus">Syllabus</a>
+      <a href="#breakdown">Modules</a>
+      <a href="#reader">Primary Sources</a>
+      <a href="#methodology">Notes</a>
+      <a href="#enroll" class="btn-primary-sm">Enroll $850</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-split" id="syllabus">
+      <div class="hero-left">
+        <div>
+          <div class="meta-strip">
+            <span class="mono-badge">TERM 04 / 12 WEEKS</span>
+            <span class="mono-badge text-accent">3 SEATS REMAINING</span>
+          </div>
+          <h1 class="hero-title">Comparative Typographic Systems & Structural Mechanics</h1>
+          <p class="hero-subtitle">An exhaustive investigation into punch-cutting geometry, lead-type grid metrics, and digital optical sizing engine architecture.</p>
+        </div>
+        
+        <div class="syllabus-summary">
+          <h2 class="section-micro-head">CURRICULUM INDEX OVERVIEW</h2>
+          <div class="table-container">
+            <table class="index-table">
+              <thead>
+                <tr>
+                  <th>CODE</th>
+                  <th>MODULE TITLE</th>
+                  <th>DURATION</th>
+                  <th>FORMAT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active-row" data-target="m1">
+                  <td class="mono">MOD-01</td>
+                  <td class="title">Punch-Cutting & Proportional Canons</td>
+                  <td class="mono">WK 01-03</td>
+                  <td>Archival Lab</td>
+                </tr>
+                <tr data-target="m2">
+                  <td class="mono">MOD-02</td>
+                  <td class="title">Phototypesetting Grid Mathematics</td>
+                  <td class="mono">WK 04-06</td>
+                  <td>Seminar</td>
+                </tr>
+                <tr data-target="m3">
+                  <td class="mono">MOD-03</td>
+                  <td class="title">Bezier Vector Engine Optimization</td>
+                  <td class="mono">WK 07-09</td>
+                  <td>Code Workshop</td>
+                </tr>
+                <tr data-target="m4">
+                  <td class="mono">MOD-04</td>
+                  <td class="title">Variable Axis & Optical Hinting</td>
+                  <td class="mono">WK 10-12</td>
+                  <td>Practicum</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="hero-action">
+          <a href="#enroll" class="btn-hero" id="hero-enroll-btn">Enroll in Monograph ARCH-804 — $850</a>
+          <span class="mono-note">Includes physical specimen archive & terminal access</span>
+        </div>
+      </div>
+
+      <div class="hero-right" id="interactive-drawer">
+        <div class="drawer-handle mono" id="drawer-toggle">▲ INTERACTIVE MATRIX PREVIEW</div>
+        <div class="interactive-preview-card">
+          <div class="card-header">
+            <span class="mono">FIG 1.0 — TYPEFACE PROPORTIONAL MATRIX</span>
+            <div class="toggle-group">
+              <button class="toggle-btn active" data-view="specimen">Specimen</button>
+              <button class="toggle-btn" data-view="grid">Vector Grid</button>
+            </div>
+          </div>
+          
+          <div class="visualizer-stage" id="hero-stage">
+            <div class="specimen-layer active-layer" id="layer-specimen">
+              <img src="assets/visual-1.jpg" alt="Macro historic metal lead-type specimen matrix" class="specimen-img">
+              <div class="overlay-callout callout-1">
+                <span class="mono" id="callout-kern-val">PUNCH KERN: 0.12mm</span>
+              </div>
+              <div class="overlay-callout callout-2">
+                <span class="mono">OPTICAL AXIS: 14°</span>
+              </div>
+            </div>
+            
+            <div class="schematic-layer" id="layer-grid">
+              <svg viewBox="0 0 500 500" class="schematic-svg">
+                <defs>
+                  <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E2DCDE" stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+                <circle id="svg-circle" cx="250" cy="250" r="180" stroke="#343D46" stroke-width="1" fill="none" stroke-dasharray="4 4" />
+                <path id="svg-arch" d="M 100 380 Q 250 50 400 380" stroke="#C85A32" stroke-width="2" fill="none" />
+                <line id="svg-stem" x1="250" y1="50" x2="250" y2="450" stroke="#C85A32" stroke-width="2" />
+                <line x1="50" y1="250" x2="450" y2="250" stroke="#343D46" stroke-width="1" />
+                <text x="260" y="70" class="svg-label">CAP HEIGHT (700 units)</text>
+                <text x="260" y="240" class="svg-label">X-HEIGHT (520 units)</text>
+                <text x="260" y="395" class="svg-label">BASELINE (0 units)</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="param-row">
+              <span class="label">Contrast Ratio:</span>
+              <span class="val mono" id="val-contrast">4.8:1</span>
+            </div>
+            <div class="param-row">
+              <span class="label">Stem Weight:</span>
+              <span class="val mono" id="val-weight">112pt</span>
+            </div>
+            <input type="range" id="param-slider" min="50" max="200" value="112" class="slider">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container" id="breakdown">
+      <div class="section-header">
+        <span class="mono-badge">DETAILED BREAKDOWN</span>
+        <h2 class="section-title">Four Structural Modules</h2>
+      </div>
+
+      <div class="module-split-view">
+        <div class="module-nav-list">
+          <button class="mod-nav-item active" data-mod="1">
+            <span class="mono">MODULE 01</span>
+            <span class="mod-nav-title">Punch-Cutting & Proportional Canons</span>
+          </button>
+          <button class="mod-nav-item" data-mod="2">
+            <span class="mono">MODULE 02</span>
+            <span class="mod-nav-title">Phototypesetting Grid Mathematics</span>
+          </button>
+          <button class="mod-nav-item" data-mod="3">
+            <span class="mono">MODULE 03</span>
+            <span class="mod-nav-title">Bezier Vector Engine Optimization</span>
+          </button>
+          <button class="mod-nav-item" data-mod="4">
+            <span class="mono">MODULE 04</span>
+            <span class="mod-nav-title">Variable Axis & Optical Hinting</span>
+          </button>
+        </div>
+
+        <div class="module-content-display">
+          <div class="mod-panel active" id="mod-panel-1">
+            <span class="mono-tag">READING REQUIREMENT: 4 PAPERS</span>
+            <h3 class="mod-display-title">Punch-Cutting & Proportional Canons</h3>
+            <p class="mod-desc">Deconstruct 16th-century steel punches using high-resolution macro photography and micro-caliper measurements. Rebuild Renaissance grid proportions using modern parametric equations.</p>
+            <ul class="mod-outlines">
+              <li><strong class="mono">1.1</strong> Steel tempering & punch resilience geometry</li>
+              <li><strong class="mono">1.2</strong> Counter-punch depth & ink trap mechanics</li>
+              <li><strong class="mono">1.3</strong> The Tschichold golden canon vs Renaissance margins</li>
+            </ul>
+          </div>
+          <div class="mod-panel" id="mod-panel-2">
+            <span class="mono-tag">READING REQUIREMENT: 2 TEXTBOOKS</span>
+            <h3 class="mod-display-title">Phototypesetting Grid Mathematics</h3>
+            <p class="mod-desc">Analyze the mid-century transition from lead to film disc projection. Mathematical modeling of lens distortion, exposure bleeding, and optical scaling charts.</p>
+            <ul class="mod-outlines">
+              <li><strong class="mono">2.1</strong> Film disc rotational velocity & flash timing</li>
+              <li><strong class="mono">2.2</strong> Optical kerning templates in analog optics</li>
+              <li><strong class="mono">2.3</strong> Early rasterization algorithms (1965-1978)</li>
+            </ul>
+          </div>
+          <div class="mod-panel" id="mod-panel-3">
+            <span class="mono-tag">LAB REQUIREMENT: C++ / RUST</span>
+            <h3 class="mod-display-title">Bezier Vector Engine Optimization</h3>
+            <p class="mod-desc">Write a bare-metal rasterizer capable of parsing OpenType CFF tables. Optimize cubic-to-quadratic curve conversions for sub-pixel rendering pipelines.</p>
+            <ul class="mod-outlines">
+              <li><strong class="mono">3.1</strong> Cubic Bezier evaluation & De Casteljau subdivision</li>
+              <li><strong class="mono">3.2</strong> Anti-aliasing via analytical area integration</li>
+              <li><strong class="mono">3.3</strong> GPU-accelerated glyph atlas generation</li>
+            </ul>
+          </div>
+          <div class="mod-panel" id="mod-panel-4">
+            <span class="mono-tag">PRACTICUM EXAM</span>
+            <h3 class="mod-display-title">Variable Axis & Optical Hinting</h3>
+            <p class="mod-desc">Master manual bytecode hinting for low-DPI displays and engineer custom variable font axes (`wght`, `opsz`, `GRAD`) targeting responsive web viewports.</p>
+            <ul class="mod-outlines">
+              <li><strong class="mono">4.1</strong> Delta instruction tables & grid fitting</li>
+              <li><strong class="mono">4.2</strong> N-dimensional design space interpolation</li>
+              <li><strong class="mono">4.3</strong> Performance audits on rendering engines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container" id="reader">
+      <div class="section-header">
+        <span class="mono-badge">PRIMARY SOURCE ARCHIVE</span>
+        <h2 class="section-title">Interactive Document Reader</h2>
+      </div>
+
+      <div class="reader-box">
+        <div class="reader-sidebar">
+          <div class="sidebar-head">DOCUMENTS</div>
+          <button class="doc-link active" data-doc="1">1572_plantin_specimen.txt</button>
+          <button class="doc-link" data-doc="2">1928_futura_manifesto.txt</button>
+          <button class="doc-link" data-doc="3">1985_postscript_spec.txt</button>
+        </div>
+        <div class="reader-viewport">
+          <div class="doc-meta">
+            <span class="mono" id="doc-id">DOC #1572-PLN</span>
+            <span class="mono" id="doc-date">DATE: ANTVWERPIAE, 1572</span>
+          </div>
+          <div class="doc-text" id="doc-content">
+            "Type is carved in hard steel by master punches. The proportion of the stem to the serif must not follow simple division, but rather the optical weight of ink upon damp rag paper. When struck into copper matrix, the displacement creates a micro-bevel that catches light, demanding compensation in the final cut."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container" id="methodology">
+      <div class="section-header">
+        <span class="mono-badge">PEDAGOGICAL STRUCTURE</span>
+        <h2 class="section-title">Instructor Methodology Notes</h2>
+      </div>
+
+      <div class="table-container">
+        <table class="index-table spec-index-table">
+          <thead>
+            <tr>
+              <th>SPEC #</th>
+              <th>METHODOLOGY PRINCIPLE</th>
+              <th>ARCHIVAL RIGOR & TARGET OUTPUT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">SPEC-01</td>
+              <td class="title">No Casual Tutorials</td>
+              <td>We do not teach tool keybindings. We dissect the mathematical principles and physical limits that govern why the tools were designed that way.</td>
+            </tr>
+            <tr>
+              <td class="mono">SPEC-02</td>
+              <td class="title">Primary Material First</td>
+              <td>Students inspect high-resolution physical scans and source code repositories. No distilled summaries or second-hand blog posts.</td>
+            </tr>
+            <tr>
+              <td class="mono">SPEC-03</td>
+              <td class="title">Rigorous Proofs</td>
+              <td>Every structural claim is backed by a code implementation or an archival specimen analysis graded by senior faculty.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="enroll-strip" id="enroll">
+      <div class="enroll-content">
+        <div class="enroll-info">
+          <span class="mono-badge badge-alt">AUTUMN COHORT OPEN</span>
+          <h3>Enroll in ARCH-804</h3>
+          <p>12 weeks. Direct instructor feedback. Access to physical specimen archives.</p>
+        </div>
+        <div class="enroll-pricing">
+          <div class="price-tag">
+            <span class="amount">$850</span>
+            <span class="period">USD / FULL COHORT</span>
+          </div>
+          <button class="btn-enroll-large" id="enroll-btn">Complete Registration</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <span class="mono">INSTITUTE OF CLASSICAL SYNTAX</span>
+      <p>© 2025 All Rights Reserved. Built for self-motivated researchers.</p>
+    </div>
+    <div class="footer-right mono">
+      <span>LAT: 42.3601° N, LON: 71.0589° W</span>
+      <span>PAPER MEDIUM ACTIVE</span>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modal">
+    <div class="modal-box">
+      <span class="mono-badge">REGISTRATION FORM</span>
+      <h3 style="font-family:'Source Serif 4', serif; margin: 1rem 0 0.5rem 0;">ARCH-804 Enrollment</h3>
+      <p style="font-size: 0.9rem; color: #343D46; margin-bottom: 1.5rem;">Enter your academic email to lock in your seat for Term 04.</p>
+      <form id="enroll-form">
+        <input type="email" placeholder="student@university.edu" required class="form-input">
+        <div style="display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 1rem;">
+          <button type="button" class="btn-secondary" id="modal-close">Cancel</button>
+          <button type="submit" class="btn-hero">Submit Registration</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
